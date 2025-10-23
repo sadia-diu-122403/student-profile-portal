@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Profile Portal</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="roll">Roll Number:</label>
+            <input type="number" id="roll" name="roll" required>
+
+            <label for="dept">Department:</label>
+            <select id="dept" name="dept">
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+                <option value="English">English</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Gender:</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <label>Skills:</label>
+            <div class="skills">
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+            </div>
+
+            <label for="about">About Me:</label>
+            <textarea id="about" name="about" rows="4" placeholder="Write a short introduction..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="table-section">
+        <h2>Student Profiles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Rahim Uddin</td>
+                    <td>CSE</td>
+                    <td>rahim@example.com</td>
+                    <td>HTML, CSS</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Fatema Akter</td>
+                    <td>EEE</td>
+                    <td>fatema@example.com</td>
+                    <td>Python, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Rafi Khan</td>
+                    <td>BBA</td>
+                    <td>rafi@example.com</td>
+                    <td>HTML, CSS, Python</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
